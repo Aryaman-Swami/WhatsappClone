@@ -1,6 +1,6 @@
-import bodyParser from 'body-parser'
-import compression from 'compression'
-import cors from 'cors'
+const bodyParser =require( 'body-parser')
+const compression =require( 'compression')
+const cors =require( 'cors');
 
 module.exports = function (app) {
     // parse application/x-www-form-urlencoded

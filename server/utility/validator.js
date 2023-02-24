@@ -1,5 +1,5 @@
-import { sendError } from "./index";
-import * as yup from "yup";
+const { sendError } =require("./index");
+const yup =require( "yup");
 
 module.exports = {
   validateCreateUser: async (req, res, next) => {

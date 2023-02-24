@@ -27,4 +27,4 @@ userSchema.static({
         })
     },
 })
-export default mongoose.model('wc-user', userSchema)
+module.exports =  mongoose.model('wc-user', userSchema);

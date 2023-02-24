@@ -39,4 +39,4 @@ channelSchema.static({
     });
   },
 });
-export default mongoose.model("wc-channel", channelSchema);
+module.exports =  mongoose.model("wc-channel", channelSchema);

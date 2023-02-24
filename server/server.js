@@ -1,6 +1,6 @@
-import APP from "express";
-import connectDB from "./dbConnection";
-import routes from "./routes";
+const APP = require("express");
+const connectDB = require("./dbConnection");
+const routes = require("./routes");
 
 const app = new APP();
 require("./config")(app);
@@ -15,6 +15,6 @@ const startServer = () => {
       routes(app);
     })
     .catch((error) => console.error(`Unable to start the server`, error));
-};
+}
 
 startServer();

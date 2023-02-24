@@ -17,4 +17,4 @@ const sendError = (res, data, msg) => {
   }
   sendResponse(res, data, msg || "Request Failed", false, 400);
 };
-export { sendResponse, sendError };
+module.exports =  { sendResponse, sendError };

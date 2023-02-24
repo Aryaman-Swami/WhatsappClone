@@ -1,6 +1,6 @@
-import UserModel from "../models/user";
-import ChannelModel from "../models/channel";
-import { sendResponse, sendError } from "../../utility";
+const UserModel =require( "../models/user");
+const ChannelModel =require( "../models/channel");
+const { sendResponse, sendError } =require( "../../utility");
 
 module.exports = {
   createUser: async (req, res) => {

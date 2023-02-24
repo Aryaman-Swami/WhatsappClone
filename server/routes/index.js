@@ -1,8 +1,8 @@
 /**
- * Created by AyushK on 26/07/21.
+ * 
  */
-import * as Controller from "../app/controllers";
-import * as Validation from "../utility/validator";
+const Controller = require( "../app/controllers");
+const Validation =require("../utility/validator");
 
 module.exports = (app) => {
     app.get('/', (req, res) => res.send(`API running fine`));
